@@ -18,14 +18,21 @@ const getData = async (searchInput) =>{
     try {
         const response = await fetch(URL);
         // console.log(response)
-        if(!response.ok){
+        if (!response.ok){
             throw new Error ("coinsi yakalayamadım");
 
         }
 
         const data = await response.json();
+        // console.log(data.data.coins)
             
+data.data.coins.forEach((item) => {
+    const { change, coinrankingUrl, color, name, price, type, symbol } = item;
+    console.log(item.name,item.price)
 
+    const li = document.createElement{"li"}
+  
+})
 
 
     }
