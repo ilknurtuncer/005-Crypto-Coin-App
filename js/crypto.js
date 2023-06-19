@@ -23,6 +23,18 @@ const url = `https://api.coinranking.com/v2/coins?search=${input.value}&limit=1`
   },
  };
  //fetch vs. axios
+const response = await axios(url, options);
+console.log(response.data.data.coins[0]);
+const { price, nane, change, iconUrl, symbol} = response.data.data.coins[0];
+// consol.log(iconUrl);
+
+try {
+  
+} catch (error) {
+  
+}
+
+  
 
 
 
