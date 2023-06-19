@@ -12,7 +12,21 @@ containerForm.addEventListener("submit", (e) => {
   
 });
 
-const getData = async () =>{
-    const API_KEY = "coinrankingd4a6719009d857b3ea88e7adc9317ad90c2405121b409bd0"
-    const URL = "https://api.coinranking.com/v2/coins?API_KEY=${API_KEY}"
+const getData = async (searchInput) =>{
+    const API_KEY = "coinrankingd4a6719009d857b3ea88e7adc9317ad90c2405121b409bd0";
+    const URL = `https://api.coinranking.com/v2/coins?API_KEY=${API_KEY}`;
+    try {
+        const response = await fetch(URL);
+        // console.log(response)
+        if(!response.ok){
+            throw new Error ("coinsi yakalayamadım");
+
+        }
+
+        const data = await response.json();
+            
+
+
+
+    }
 }
