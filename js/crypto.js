@@ -87,7 +87,8 @@ const getCoinDataFromApi = async () => {
    }
 
 }
-
+//http response codes
+//rest api vs. soap api
 
 
 
