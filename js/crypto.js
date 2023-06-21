@@ -61,7 +61,7 @@ const getCoinDataFromApi = async () => {
             <div class="coin-temp">$${Number(price).toFixed(6)}</div>
             <figure>
                 <img class="coin-icon" src=${iconUrl}>                
-                <figcaption style='color:${change < 0 ? "red" : "green"}'>
+                <figcaption style='color:${change < 0 ? "red" : "blue"}'>
                     <span><i class="fa-solid fa-chart-line"></i></span>
                     <span>${change}%</span>
                 </figcaption>
